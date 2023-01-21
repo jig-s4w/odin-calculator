@@ -35,13 +35,23 @@ body{
 }
 
 .display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 10px;
     width:90%;
     height:20%;
     margin:2px 2px;
     border: 1px solid black;
     border-radius: 20px;
-
+    overflow: hidden;
 }
+
+.display-span{
+    width: (100% - 150px);
+    font-size: 45px;
+}
+
 .keypad{
     display: flex;
     flex-wrap: wrap;
@@ -61,13 +71,16 @@ body{
 }
 
 .keys:hover{
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(185, 185, 185);
+    cursor: pointer;
 }
 
 span{
     font-size: 30px;
     color: rgb(51, 51, 51);
 }
+
+
 
 @media only screen and (max-width: 500px){
     #calculator{     
